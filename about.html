@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BOO BOO PDF</title>
+    <style>
+        :root {
+            --charcoal: #444444;
+            --lavender-light: #efd9ff;
+            --lavender-text: #c77dff;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--charcoal);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: #f9f9f9;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            /* Added margin for mobile breathing room */
+            margin: 20px 0; 
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color: var(--lavender-text);
+            font-size: 48px;
+            margin-bottom: 20px;
+            background-color: var(--charcoal);
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: var(--charcoal);
+            border-bottom: 3px solid var(--lavender-light);
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background-color: var(--lavender-light);
+            padding: 20px;
+            border-radius: 20px;
+            font-style: italic;
+            margin: 30px 0;
+        }
+
+        .back-btn {
+            display: inline-flex;    /* Changed from inline-block */
+            align-items: center;     /* Centers text vertically */
+            justify-content: center; /* Centers text horizontally */
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: var(--charcoal);
+            color: var(--lavender-light);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--lavender-text);
+            color: var(--charcoal);
+            transform: translateY(-3px);
+        }
+
+        /* --- RESPONSIVE MOBILE FIXES --- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px; /* Reduced padding so content isn't squashed */
+                border-radius: 20px;
+            }
+
+            h1 {
+                font-size: 28px; /* Significantly smaller to fit on one line */
+                padding: 10px 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px; /* Slightly smaller text for readability */
+            }
+
+            .highlight-box {
+                font-size: 15px;
+                padding: 15px;
+            }
+
+            .back-btn {
+                width: 80%; /* Makes the button easier to tap */
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About BOO BOO PDF</h1>
+        
+        <p>Welcome to <strong>BOO BOO PDF</strong>, a fast, free, and secure tool designed to simplify your document management. Whether you need to merge, split, or compress files, our mission is to provide high-quality PDF tools without the need for expensive software.</p>
+
+        <h2>Our Story</h2>
+        <p>I am a first-year undergraduate student at the <strong>South Eastern University of Sri Lanka (SEUSL)</strong>. This website started as a self-learning project to improve my web development skills and solve a common problem: finding easy-to-use PDF tools that respect user privacy.</p>
+
+        <div class="highlight-box">
+            "We believe that powerful tools should be accessible to everyone, especially students and educators, without compromising data security."
+        </div>
+
+        <h2>Why Choose Us?</h2>
+        <p>Unlike many online editors, BOO BOO PDF processes files using client-side technology. This means your documents stay in your browser and are <strong>never stored on our servers</strong>, ensuring your private information remains private.</p>
+
+        <h2>Contact the Creator</h2>
+        <p>If you have any feedback or suggestions to improve this tool, feel free to reach out to me at:<br>
+        <strong>pabasaradimuth12345@gmail.com</strong></p>
+
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+</body>
+</html>
