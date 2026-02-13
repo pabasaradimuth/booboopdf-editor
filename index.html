@@ -182,14 +182,18 @@
     }
 
     /* AD SIDEBAR: Fills the vertical height */
+    /* AD SIDEBAR: Professional Layout */
     .ad-sidebar {
       flex: 1;
       background-color: var(--lavender-light);
       border-radius: 40px;
-      display: none;/*please change it to flex after*/
+      display: flex; /* Changed from none */
+      flex-direction: column; /* Stacks text and ad */
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Keeps ad near the top */
+      padding: 30px 10px;
       min-height: 700px;
+      overflow: hidden; /* Keeps the ad inside your rounded corners */
     }
 
     .ad-text {
@@ -349,11 +353,14 @@
     </div>
 
     <div class="ad-sidebar">
-      <div class="ad-text">AD Area</div>
+      <div class="ad-text" style="writing-mode: horizontal-tb; transform: rotate(0); font-size: 14px; margin-bottom: 20px; opacity: 0.5;">ADVERTISEMENT</div>
+      
+      <script>(function(s){s.dataset.zone='10607299',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     </div>
   </div>
 
 </body>
 
 </html>
+
 
