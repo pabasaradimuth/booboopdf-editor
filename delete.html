@@ -24,15 +24,22 @@
 
     .main-container {
       display: flex;
-      max-width: 1400px;
+      justify-content: center; /* This is the key to centering everything */
+      max-width: 1400px; 
       width: 95%;
-      gap: 30px;
+      gap: 0; /* Remove the gap since there is no sidebar */
       padding: 40px 0;
+      align-items: center;
     }
 
+    /* Left Side Content - Now centered and full width */
     .content-area {
-      flex: 3;
+      flex: 1; 
+      max-width: 1000px; 
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       min-width: 0;
     }
 
@@ -391,4 +398,5 @@
 </body>
 
 </html>
+
 
